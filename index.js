@@ -12,7 +12,7 @@ return empObj
 }
 
 function createEmployeeRecords(arr){
-   return  arr.map(createEmployeeRecord)
+   return  arr.map(function(emp) {return createEmployeeRecord(emp)})
 }
  function createTimeInEvent(obj, dateStamp){
     
